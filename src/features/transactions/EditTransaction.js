@@ -28,7 +28,7 @@ const EditTransaction = () => {
   };
   const [name, setName] = useState({...inputState, value: selectEditItem.name});
   const [category, setCategory] = useState({...inputState, value: selectEditItem.category});
-  const [date, setDate] = useState({...inputState, value: new Date()});
+  const [date, setDate] = useState({...inputState, value: selectEditItem.date});
   const [amount, setAmount] = useState({...inputState, value: selectEditItem.amount});
 
   const dispatch = useDispatch();
